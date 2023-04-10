@@ -1,4 +1,40 @@
 @charset "UTF-8";
+/*
+@mixin caret($direction: down) {
+  @if $enable-caret {
+    &::after {
+      display: inline-block;
+      margin-left: $caret-spacing;
+      vertical-align: $caret-vertical-align;
+      //content: "";
+      @if $direction == down {
+        @include caret-down();
+      } @else if $direction == up {
+        @include caret-up();
+      } @else if $direction == end {
+        @include caret-end();
+      }
+    }
+
+    @if $direction == start {
+      &::after {
+        display: none;
+      }
+
+      &::before {
+        display: inline-block;
+        margin-right: $caret-spacing;
+        vertical-align: $caret-vertical-align;
+        content: "";
+        @include caret-start();
+      }
+    }
+
+    &:empty::after {
+      margin-left: 0;
+    }
+  }
+}*/
 .editor-texto p,
 .editor-texto span,
 .editor-texto ul,
@@ -202,6 +238,11 @@ footer a:hover {
 footer .logo {
   width: 330px;
 }
+@media (max-width: 1600PX) {
+  footer .logo {
+    width: 280px !important;
+  }
+}
 @media (max-width: 992px) {
   footer .logo {
     width: 200px !important;
@@ -378,6 +419,9 @@ footer .copyright p {
 .cidades .row .row .infos {
   border-radius: 0px 6px 6px 0px;
   margin-left: -5px;
+}
+.cidades .row .atuacao-swiper .swiper-pagination {
+  --swiper-theme-color: #FF0000;
 }
 
 .contato {

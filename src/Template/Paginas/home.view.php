@@ -101,7 +101,7 @@ Com política de manutenção, renovação de frota e monitoramento de veículos
             <div class="col-lg-6 col-12 bg-cinza d-flex justify-content-center align-items-center p-xl-4 p-lg-1 p-2 flex-column">
                 <div class="row d-flex justify-content-center infos my-lg-4 my-1">    
                     <h2 class="h2 h2-50 text-primary text-lg-start text-center">Área de atuação</h2>
-                    <select name="" id="" class="form-select p mt-2 mb-1">
+                    <select name="" id="mySelect" class="form-select p mt-2 mb-1">
                         <option value="" >Selecione uma cidade aqui ou clicando no mapa</option>
                         <option value="">opção 1</option>
                         <option value="">opção 2</option>
@@ -133,6 +133,20 @@ Com política de manutenção, renovação de frota e monitoramento de veículos
                             </p>
                         </div>
                     </div>
+                    <!-- swiper -->
+                    <div class="swiper atuacao-swiper">
+                            <div class="swiper-wrapper my-4">
+                                <?php foreach(range(0,9) as $i) : ?>
+                                    <div class="swiper-slide d-flex justify-content-center flex-column">
+                                        <div class="ratio ratio-1x1 m-auto">
+                                            <img class="w-100 h-100 object-fit-cover" src="<?= asset('images/banners/caminhao.png') ?>" alt="">
+                                        </div>
+                                    </div>
+                                <?php endforeach; ?>
+                            </div>
+                        <div class="swiper-pagination mt-2"></div> 
+                    </div>
+                <!--swiper-->
                 </div>
             </div>
             <div class="col-lg-6 col-12 bg-danger">Espaço para o mapa</div>
