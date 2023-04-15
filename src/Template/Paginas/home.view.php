@@ -15,6 +15,21 @@
                         <div class="d-flex justify-content-center gap-1 pt-1">
                             <button class="btn btn-outline-light p">Consulta simples</button>
                             <button class="btn btn-outline-light p">Consulta completa</button>
+                            <button class="btn btn-outline-light p d-none d-md-flex">Consulta simples</button>
+                            <button class="btn btn-outline-light p d-none d-lg-flex">Consulta completa</button>
+                            <button class="btn btn-outline-light p d-none d-lg-flex">Consulta completa</button>
+                        </div>
+                        <div class="d-flex justify-content-center gap-1 pt-1 d-none d-md-flex d-lg-none">
+                            <button class="btn btn-outline-light p">Consulta simples</button>
+                            <button class="btn btn-outline-light p">Consulta completa</button>
+                        </div>
+                        <div class="d-flex justify-content-center gap-1 pt-1 d-flex d-md-none">
+                            <button class="btn btn-outline-light p">Consulta simples</button>
+                            <button class="btn btn-outline-light p">Consulta completa</button>
+                        </div>
+                        <div class="d-flex justify-content-center gap-1 pt-1 d-flex d-md-none mb-1">
+                            <button class="btn btn-outline-light p">Consulta simples</button>
+                            <button class="btn btn-outline-light p">Consulta completa</button>
                         </div>
                     </div>
                 </div>
