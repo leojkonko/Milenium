@@ -202,6 +202,11 @@ footer a:hover {
 footer .logo {
   width: 330px;
 }
+@media (max-width: 1600PX) {
+  footer .logo {
+    width: 280px !important;
+  }
+}
 @media (max-width: 992px) {
   footer .logo {
     width: 200px !important;
@@ -402,6 +407,9 @@ footer .copyright p {
   border-radius: 0px 6px 6px 0px;
   margin-left: -5px;
 }
+.cidades .row .atuacao-swiper .swiper-pagination {
+  --swiper-theme-color: #FF0000;
+}
 
 .contato {
   background-image: url(../images/backgrounds/contato.png);
@@ -539,6 +547,22 @@ footer .copyright p {
 }
 @media (min-width: 992px) and (max-width: 1200px) {
   .h2-50 {
+    font-size: 30px !important;
+  }
+}
+
+.h2-25 {
+  font-size: 30px !important;
+  line-height: 30px !important;
+  font-weight: 700;
+}
+@media (max-width: 1400px) {
+  .h2-25 {
+    font-size: 26px !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .h2-25 {
     font-size: 30px !important;
   }
 }

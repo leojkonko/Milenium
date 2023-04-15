@@ -87,6 +87,11 @@
           font-size: 16px;
         }
       }
+      & button:focus{
+        & rect,path{
+          stroke: white !important;
+        }
+      }
     }
   }
 }

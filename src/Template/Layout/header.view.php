@@ -82,16 +82,22 @@
                     </button>
                 </div>
                 <div class="col-lg-3 d-flex align-items-center justify-content-center d-none d-lg-flex ">
-                    <button class="btn btn-outline-light text-white p">
-                        <svg class="me-0-50 mb-0-50" width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="4" y="1.09375" width="10" height="10" rx="5" stroke="white" stroke-width="1.2"/>
-                            <path d="M17 19.9063C17 15.488 13.4183 11.9062 9 11.9062C4.58172 11.9062 1 15.488 1 19.9063" stroke="white" stroke-width="1.2"/>
-                        </svg>
-                            Área do cliente
-                        <svg class="ms-0-50 mb-0-25" width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 5L9 13L17 5" stroke="white" stroke-width="1.3"/>
-                        </svg>
-                    </button>       
+                    <div class="btn-group">
+                        <button class="btn btn-outline-light text-white p dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <svg class="me-0-50 mb-0-50" width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="4" y="1.09375" width="10" height="10" rx="5" stroke="white" stroke-width="1.2"/>
+                                    <path d="M17 19.9063C17 15.488 13.4183 11.9062 9 11.9062C4.58172 11.9062 1 15.488 1 19.9063" stroke="white" stroke-width="1.2"/>
+                                </svg>
+                                    Área do cliente
+                                <svg class="ms-0-50 mb-0-25" width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 5L9 13L17 5" stroke="white" stroke-width="1.3"/>
+                                </svg>
+                            </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Consulta simples</a></li>
+                            <li><a class="dropdown-item" href="#">Consulta completa</a></li>
+                        </ul>
+                    </div>    
                 </div>
             </div>  
         </div>
@@ -118,18 +124,22 @@
                             <a href="#contato" class="text-white p">Contato</a>
                         </li>
                         <li>
-                            <a href="#contato" class="link">
-                                <button class="btn btn-outline-dark text-dark p">
-                                    <svg class="me-0-50 mb-0-50" width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect x="4" y="1.09375" width="10" height="10" rx="5" stroke="black" stroke-width="1.2"/>
-                                        <path d="M17 19.9063C17 15.488 13.4183 11.9062 9 11.9062C4.58172 11.9062 1 15.488 1 19.9063" stroke="black" stroke-width="1.2"/>
-                                    </svg>
-                                        Área do cliente
-                                    <svg class="ms-0-50 mb-0-25" width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1 5L9 13L17 5" stroke="black" stroke-width="1.3"/>
-                                    </svg>
-                                </button> 
-                            </a>
+                            <div class="btn-group">
+                                <button class="btn btn-outline-dark text-dark p dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <svg class="me-0-50 mb-0-50" width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="4" y="1.09375" width="10" height="10" rx="5" stroke="black" stroke-width="1.2"/>
+                                            <path d="M17 19.9063C17 15.488 13.4183 11.9062 9 11.9062C4.58172 11.9062 1 15.488 1 19.9063" stroke="black" stroke-width="1.2"/>
+                                        </svg>
+                                            Área do cliente
+                                        <svg class="ms-0-50 mb-0-25" width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 5L9 13L17 5" stroke="black" stroke-width="1.3"/>
+                                        </svg>
+                                    </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Consulta simples</a></li>
+                                    <li><a class="dropdown-item" href="#">Consulta completa</a></li>
+                                </ul>
+                            </div> 
                         </li>
                     </ul>
                 </div>

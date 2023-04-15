@@ -3,6 +3,8 @@
     <div class="container">
         <div class="row">
             <!--
+=======
+        <div class="row me-lg-2 me-0">
             <div class="col-lg-4 d-flex justify-content-lg-end justify-content-center">
                 <a href="<?= url('/') ?>">
                     <svg class="m-auto d-flex d-lg-inline-block logo" width="336" height="121" viewBox="0 0 336 121" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -37,10 +39,10 @@
                     </svg>
                 </a>
             </div>
-            <div class="col-lg-4 d-flex justify-content-center text-lg-start text-center px-4">
+            <div class="col-lg-5 d-flex justify-content-center text-lg-start text-center px-4">
                 <div class="flex-column ps-lg-0 ps-xl-1 ps-xxl-3">
                     <h2 class="h2 w-100 mb-lg-2">Onde estamos</h2>
-                    <p class="p">
+                    <p class="p text-nowrap">
                         <a href="https://www.google.com.br/maps/place/Milenium+Transporte/@-29.1817255,-51.2581843,14z/data=!4m10!1m2!2m1!1smilenium+transportes+caxias+do+sul!3m6!1s0x951ea2c5718cde11:0x514b998c6991db8c!8m2!3d-29.153035!4d-51.1925743!15sCiJtaWxlbml1bSB0cmFuc3BvcnRlcyBjYXhpYXMgZG8gc3VskgEQc2hpcHBpbmdfY29tcGFueeABAA!16s%2Fg%2F1ptz9lbqj"
                         class="text-dark">
                         R. Fiorino D'Agostini, 2197 <br>
@@ -49,9 +51,9 @@
                     </p>
                 </div>
             </div>
-            <div class="col-lg-4 flex-column text-lg-start text-center pt-2 pt-lg-0">
+            <div class="col-lg-3 flex-column text-lg-start text-center pt-2 pt-lg-0">
                  <h2 class="h2 w-100 mb-lg-2">Contato</h2>
-                <p class="p">
+                <p class="p text-nowrap">
                     <a href="" class="text-dark">(54) 3224-2304</a>  |  <a href="" class="text-dark">(54) 3224-4645</a> <br>
                     <a class="text-dark" href="mailto:cx@mileniumtransp.com.br">cx@mileniumtransp.com.br</a>
                 </p>
@@ -99,7 +101,7 @@
         <div class="copyright">
             <div class="container mt-2">
                 <div class="w-100 col-lg-12 d-flex align-items-center py-2 flex-column flex-lg-row">
-                    <p class="p ml-auto m-a">© 2023 Milenium Transportes</p>
+                    <p class="p ml-auto m-a">© Copyright 2023. Milenium Transportes</p>
                     <p class="p politica margin-auto"><a href="<?= url('/politica') ?>">Política de privacidade</a></p>
                     <p class="p mr-auto m-a">
                         <a href="https://www.ellitedigital.com.br/" target="_blank">
@@ -166,49 +168,6 @@ $(document).ready(function() {
   });
 });
 
-</script>
-<script>
-    		
-
-            function mudarTexto(classeImg) {
-			// Seleciona o elemento de texto
-			var elementoTexto = document.getElementById("conteudo");
-            var titulo = document.getElementById("titulo");
-            console.log(titulo)
-			// Altera o texto dependendo da classe da imagem
-			if (classeImg === "img_0") {
-				titulo.innerHTML = "titulo 1"
-                elementoTexto.innerHTML = "Texto para a primeira imagem!Texto para a primeira imagem!Texto para a primeira imagem!Texto para a pr";
-			} else if (classeImg === "img_1") {
-                titulo.innerHTML = "titulo 2"
-				elementoTexto.innerHTML = "Texto para a segunda imagem!Texto para a segunda imagem!Texto para a segunda imagem!Texto para a segunda gem!";
-			} else if (classeImg === "img_2") {
-                titulo.innerHTML = "titulo 3"
-				elementoTexto.innerHTML = "Texto para a terceira imagem!Texto para a terceira imagem!Texto para a terceira imagem!Texto para a tercem!";
-			} else if (classeImg === "img_3") {
-                titulo.innerHTML = "titulo 4"
-				elementoTexto.innerHTML = "Texto para a quarta imagem!Texto para a quarta imagem!Texto para a quarta imagem!Texto para a quarta imagem!rta imagem!";
-			} else if (classeImg === "img_4") {
-                titulo.innerHTML = "titulo 5"
-				elementoTexto.innerHTML = "Texto para a quinta imagem!Texto para a quinta imagem!Texto para a quinta imagem!Texto para a quinta imagemagem!";
-			} else if (classeImg === "img_5") {
-                titulo.innerHTML = "titulo 6"
-				elementoTexto.innerHTML = "Texto para a sexta imagem!Texto para a sexta imagem!Texto para a sexta imagem!Texto para a sexta imagem!Textoem!";
-			} else if (classeImg === "img_6") {
-                titulo.innerHTML = "titulo 7"
-				elementoTexto.innerHTML = "Texto para a sétima imagem!Texto para a sétima imagem!Texto para a sétima imagem!Texto para a sétima imagemmagem!";
-			} else if (classeImg === "img_7") {
-                titulo.innerHTML = "titulo 8"
-				elementoTexto.innerHTML = "Texto para a oitava imagem!Texto para a oitava imagem!Texto para a oitava imagem!Texto para a oitava imagem!";
-			} else if (classeImg === "img_8") {
-                titulo.innerHTML = "titulo 9"
-				elementoTexto.innerHTML = "Texto para a nona imagem!Texto para a nona imagem!Texto para a nona imagem!Texto para a nona imagem!Texta imagem!";
-			}
-            else if (classeImg === "img_9") {
-                titulo.innerHTML = "titulo 10"
-				elementoTexto.innerHTML = "Texto para a décima imagem!Texto para a décima imagem!Texto para a décima imagem!Texto para a décimaem!";
-			}
-		}
 </script>
 </body>
 

@@ -188,6 +188,11 @@
             }
 
         }
+        & .atuacao-swiper{
+            & .swiper-pagination{
+                --swiper-theme-color: #FF0000; //#007aff;
+            }
+        }
     }
 }
 
