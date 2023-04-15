@@ -22,6 +22,15 @@ footer {
 
     }
 
+    & a {
+        color: #303030 !important;
+
+        &:hover {
+            color: black !important;
+            font-weight: initial;
+        }
+    }
+
     & .copyright {
         background-color: #d9d9d9;
 

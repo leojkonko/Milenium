@@ -44,6 +44,23 @@
         position: relative;
         z-index: 99;
 
+        & .veja-mais {
+            position: absolute;
+            z-index: 20;
+            left: 50%;
+            top: 45%;
+            transform: translate(-50%, -50%);
+            font-weight: 300;
+            font-size: 48px;
+            line-height: 90%;
+            color: #303030;
+
+            @media(max-width: 992px) {
+                top: 40%;
+                font-size: 28px;
+            }
+        }
+
         &::before {
             background: linear-gradient(0deg, rgba(202, 202, 202, 0.9), rgba(202, 202, 202, 0.9));
             width: 100%;
@@ -83,7 +100,7 @@
         & .a-ratio {
             &::after {
                 //background: linear-gradient(0deg, rgba(48, 48, 48, 0.9), rgba(48, 48, 48, 0.9));
-                content: "+2";
+                /*content: "+2";
                 width: 100%;
                 height: 100%;
                 color: black;
@@ -105,6 +122,7 @@
                 font-size: 48px;
                 line-height: 90%;
                 z-index: 9;
+                */
             }
         }
     }
@@ -153,8 +171,8 @@
 .cidades {
     & .row {
         & .row {
-            width: 70%;
-            margin-left: 14%;
+            //width: 70%;
+            //margin-left: 14%;
             border-radius: 6px;
 
             @media(max-width: 1600px) {
