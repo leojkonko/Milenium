@@ -3269,6 +3269,9 @@ textarea.form-control-lg {
 .accordion-body {
   padding: 1rem 1rem 1rem 0rem;
 }
+.accordion-body .linha {
+  border-bottom: 1px solid #d3d8e0;
+}
 .accordion-body a {
   color: #303030;
 }
@@ -4034,7 +4037,7 @@ textarea.form-control-lg {
   top: 0;
   right: 0;
   left: 0;
-  height: 500px;
+  height: 540px;
   max-height: 100%;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   transform: translateY(-100%);
@@ -4054,7 +4057,12 @@ textarea.form-control-lg {
     font-size: 16px;
   }
 }
-.offcanvas-top ul li button:focus rect, .offcanvas-top ul li button:focus path {
+.offcanvas-top ul li .svg {
+  font-size: 33px;
+  color: white !important;
+}
+.offcanvas-top ul li button:focus rect,
+.offcanvas-top ul li button:focus path {
   stroke: white !important;
 }
 

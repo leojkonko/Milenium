@@ -170,26 +170,32 @@
 
 .cidades {
     & .row {
-        & .row {
-            //width: 70%;
-            //margin-left: 14%;
-            border-radius: 6px;
+        //width: 70%;
+        //margin-left: 14%;
 
-            @media(max-width: 1600px) {
-                margin-left: 0%;
-                width: 100%;
-            }
 
-            & .imagem {}
-
-            & .infos {
-                border-radius: 0px 6px 6px 0px;
-                margin-left: -5px;
-            }
-
+        @media(max-width: 1600px) {
+            margin-left: 0%;
+            width: 100%;
         }
-        & .atuacao-swiper{
-            & .swiper-pagination{
+
+        @media(min-width: 992px) {
+            //border-radius: 6px;
+        }
+
+        & .imagem {}
+
+        & .infos {
+
+            @media(min-width: 992px) {
+                border-radius: 0px 6px 6px 0px !important;
+            }
+        }
+
+
+
+        & .atuacao-swiper {
+            & .swiper-pagination {
                 --swiper-theme-color: #FF0000; //#007aff;
             }
         }

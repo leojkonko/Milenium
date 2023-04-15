@@ -97,8 +97,12 @@
 
 .accordion-body {
   padding: 1rem 1rem 1rem 0rem;
+
   //padding: $accordion-body-padding-y $accordion-body-padding-x;
   //background-color: #eaeaea;
+  & .linha {
+    border-bottom: 1px solid #d3d8e0;
+  }
 
   & a {
     color: #303030;
