@@ -203,15 +203,19 @@ header ul li a:hover {
   color: #eaeaea;
 }
 header .btn-outline-light:hover path,
-header .btn-outline-light:hover rect {
+header .btn-outline-light:hover rect,
+header .btn-outline-light:active path,
+header .btn-outline-light:active rect {
+  stroke: black;
+}
+header .show path,
+header .show rect {
   stroke: black;
 }
 header .botao-whatsapp {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   font-size: calc(1.95rem + 0.25vw);
   font-size: clamp(2rem, 1.95rem + 0.25vw, 2.25rem);
-  width: 1em;
-  height: 1em;
   box-sizing: content-box;
   padding: 0.33em;
   isolation: isolate;
@@ -303,7 +307,7 @@ footer a {
   color: #303030 !important;
 }
 footer a:hover {
-  color: black !important;
+  color: rgb(92, 90, 90) !important;
   font-weight: initial;
 }
 footer .copyright {
@@ -336,6 +340,65 @@ footer .copyright a {
 footer .copyright p {
   margin-top: 0px !important;
   margin-bottom: 0px !important;
+}
+footer .botao-whatsapp {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  font-size: calc(1.95rem + 0.25vw);
+  font-size: clamp(2rem, 1.95rem + 0.25vw, 2.25rem);
+  width: 1em;
+  height: 1em;
+  box-sizing: content-box;
+  padding: 0.33em;
+  isolation: isolate;
+  color: #fff !important;
+  background-color: rgb(26, 202, 35);
+  transition: all 0.2s ease-in-out;
+}
+footer .botao-whatsapp:hover {
+  color: #fff !important;
+}
+footer .botao-whatsapp::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0%;
+  height: 0%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: all 0.2s ease-in-out;
+  z-index: -1;
+  background-image: linear-gradient(50deg, #149d1b, #32e53b);
+  border-radius: 9999px;
+}
+@media (hover: hover) {
+  footer .botao-whatsapp:hover {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  }
+  footer .botao-whatsapp:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+  }
+}
+footer .botao-whatsapp-wrapper {
+  z-index: 990;
+}
+footer .botao-whatsapp-hoverable {
+  display: none;
+}
+@media (hover: hover) {
+  footer .botao-whatsapp-hoverable {
+    display: flex;
+  }
+}
+footer .botao-whatsapp-not-hoverable {
+  display: none;
+}
+@media (hover: none) {
+  footer .botao-whatsapp-not-hoverable {
+    display: flex;
+  }
 }
 
 #home .banner .bg-index {
@@ -480,6 +543,23 @@ footer .copyright p {
   background: white;
 }
 
+@media (min-width: 1200px) {
+  .cidades .container-xl,
+.cidades .container-lg,
+.cidades .container-md,
+.cidades .container-sm,
+.cidades .container {
+    max-width: 1261px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .cidades .container-lg,
+.cidades .container-md,
+.cidades .container-sm,
+.cidades .container {
+    max-width: 1120px;
+  }
+}
 @media (max-width: 1600px) {
   .cidades .row {
     margin-left: 0%;
@@ -491,8 +571,23 @@ footer .copyright p {
     border-radius: 0px 6px 6px 0px !important;
   }
 }
+@media (min-width: 992px) {
+  .cidades .row .img-infos {
+    border-radius: 6px 0px 0px 6px !important;
+  }
+}
 .cidades .row .atuacao-swiper .swiper-pagination {
   --swiper-theme-color: #FF0000;
+}
+.cidades hr {
+  margin: 0px 30px;
+  background-color: #a3a0a0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.cidades .btn-danger:hover {
+  color: white;
 }
 
 .contato {
@@ -636,13 +731,13 @@ footer .copyright p {
 }
 
 .h2-25 {
-  font-size: 30px !important;
+  font-size: 26px !important;
   line-height: 30px !important;
   font-weight: 700;
 }
 @media (max-width: 1400px) {
   .h2-25 {
-    font-size: 26px !important;
+    font-size: 24px !important;
   }
 }
 @media (min-width: 992px) and (max-width: 1200px) {

@@ -169,6 +169,28 @@
 }
 
 .cidades {
+
+    @media (min-width: 1200px) {
+
+        & .container-xl,
+        .container-lg,
+        .container-md,
+        .container-sm,
+        .container {
+            max-width: 1261px;
+        }
+    }
+
+    @media (min-width: 992px)and(max-width: 1200px) {
+
+        .container-lg,
+        .container-md,
+        .container-sm,
+        .container {
+            max-width: 1120px;
+        }
+    }
+
     & .row {
         //width: 70%;
         //margin-left: 14%;
@@ -192,6 +214,13 @@
             }
         }
 
+        & .img-infos {
+
+            @media(min-width: 992px) {
+                border-radius: 6px 0px 0px 6px !important;
+            }
+        }
+
 
 
         & .atuacao-swiper {
@@ -199,6 +228,18 @@
                 --swiper-theme-color: #FF0000; //#007aff;
             }
         }
+    }
+
+    & hr {
+        margin: 0px 30px;
+        background-color: #a3a0a0;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    & .btn-danger:hover {
+        color: white;
     }
 }
 

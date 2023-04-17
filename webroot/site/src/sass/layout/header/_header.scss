@@ -50,7 +50,16 @@ header {
         }
     }
 
-    & .btn-outline-light:hover {
+    & .btn-outline-light:hover,
+    .btn-outline-light:active {
+
+        & path,
+        rect {
+            stroke: black;
+        }
+    }
+
+    & .show {
 
         & path,
         rect {
@@ -91,8 +100,8 @@ header {
         $zindex-botao-whatsapp: 990;
         box-shadow: $box-shadow;
         @include linear-rfs(2rem, 2.25rem, 320px, 1920px);
-        width: 1em;
-        height: 1em;
+        //width: 1em;
+        //height: 1em;
         box-sizing: content-box;
         padding: .33em;
         isolation: isolate;

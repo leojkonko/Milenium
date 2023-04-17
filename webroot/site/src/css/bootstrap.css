@@ -2823,11 +2823,21 @@ textarea.form-control-lg {
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 0.25rem;
+  width: 203px;
+}
+@media (min-width: 1600px) {
+  .dropdown-menu {
+    width: 220px;
+  }
 }
 .dropdown-menu[data-bs-popper] {
   top: 100%;
   left: 0;
   margin-top: 0.125rem;
+}
+.dropdown-menu li {
+  margin: 0px 0px !important;
+  text-align: center;
 }
 
 .dropdown-menu-start {
@@ -3195,7 +3205,7 @@ textarea.form-control-lg {
   text-align: left;
   background-color: #283044;
   border: 0;
-  border-radius: 0;
+  border-radius: 6px;
   overflow-anchor: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
 }
@@ -3240,15 +3250,7 @@ textarea.form-control-lg {
 }
 
 .accordion-item {
-  background-color: #fff;
-}
-.accordion-item:first-of-type {
-  border-top-left-radius: 0.25rem;
-  border-top-right-radius: 0.25rem;
-}
-.accordion-item:first-of-type .accordion-button {
-  border-top-left-radius: calc(0.25rem - 1px);
-  border-top-right-radius: calc(0.25rem - 1px);
+  background-color: #eaeaea;
 }
 .accordion-item:not(:first-of-type) {
   border-top: 0;
