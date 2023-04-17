@@ -86,7 +86,7 @@
                 <?php foreach(range(0,2) as $i) : ?>
                 <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button ps-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne<?=$i?>" aria-expanded="true" aria-controls="collapseOne<?=$i?>">
+                        <button class="accordion-button ps-1 ps-sm-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne<?=$i?>" aria-expanded="true" aria-controls="collapseOne<?=$i?>">
                             Rio Grande do Sul <?=$i?>
                         </button>
                         </h2>
