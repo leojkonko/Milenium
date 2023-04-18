@@ -126,14 +126,8 @@
                                 <div class="col-lg-12 col-xl-6 col-xxl-6 flex-column p-2">
                                     <h2 class="h2-25 text-primary text-lg-start text-center">Cidades atendidas por Caxias do Sul:</h2>
                                     <div class="d-flex h-100 w-100 d-flex justify-content-between align-items-center">
-                                        <ul class="list-unstyled m-0">
-                                            <?php foreach(range(0,6) as $k) : ?>
-                                            <li class="p p-16">
-                                            <img width="15px" class="me-md-0-50 me-0" src="<?= asset('images/icones/proximo.png') ?>" alt="">    
-                                            Cidade 1<?=$k?></li>
-                                            <?php endforeach; ?>
-                                        </ul>
-                                        <ul class="list-unstyled m-0">
+                                        <!-- DESKTOP -->
+                                        <ul class="list-unstyled m-0 d-none d-sm-block">
                                             <?php foreach(range(0,6) as $k) : ?>
                                             <li class="p p-16">
                                             <img width="15px" class="me-md-0-50 me-0" src="<?= asset('images/icones/proximo.png') ?>" alt="">    
@@ -147,6 +141,30 @@
                                             Cidade 1<?=$k?></li>
                                             <?php endforeach; ?>
                                         </ul>
+                                        <ul class="list-unstyled m-0 d-none d-sm-block">
+                                            <?php foreach(range(0,6) as $k) : ?>
+                                            <li class="p p-16">
+                                            <img width="15px" class="me-md-0-50 me-0" src="<?= asset('images/icones/proximo.png') ?>" alt="">    
+                                            Cidade 1<?=$k?></li>
+                                            <?php endforeach; ?>
+                                        </ul>
+                                        <!-- DESKTOP -->
+                                        <!-- MOBILE -->
+                                        <ul class="list-unstyled m-0 d-block d-sm-none">
+                                            <?php foreach(range(0,12) as $k) : ?>
+                                            <li class="p p-16">
+                                            <img width="15px" class="me-md-0-50 me-0" src="<?= asset('images/icones/proximo.png') ?>" alt="">    
+                                            Cidade 1<?=$k?></li>
+                                            <?php endforeach; ?>
+                                        </ul>
+                                        <ul class="list-unstyled m-0 d-block d-sm-none">
+                                            <?php foreach(range(0,12) as $k) : ?>
+                                            <li class="p p-16">
+                                            <img width="15px" class="me-md-0-50 me-0" src="<?= asset('images/icones/proximo.png') ?>" alt="">    
+                                            Cidade 1<?=$k?></li>
+                                            <?php endforeach; ?>
+                                        </ul>
+                                        <!-- MOBILE -->
                                     </div>
                                 </div>
                                 
